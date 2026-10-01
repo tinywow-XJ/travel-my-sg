@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>十一马来西亚🇲🇾 新加坡🇸🇬 7天完整行程</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+<script>
+tailwind.config = {
+  theme:{
+    extend:{
+      colors:{
+        primary:"#0F4C81",
+        malaysia:"#008C45",
+        singapore:"#ED2939",
+        light:"#F7F9FC",
+        dark:"#1E293B"
+      }
+    }
+  }
+}
+</script>
+<style>
+@layer utilities{
+  .scrollbar-hide::-webkit-scrollbar{display:none}
+  .nav-active{border-bottom:2px solid #fff;color:#fff;font-weight:600}
+  .card-shadow{box-shadow:0 10px 25px -5px rgba(15,76,129,0.12),0 8px 10px -6px rgba(15,76,129,0.08)}
+  .hero-pattern{
+    background-image:
+      linear-gradient(135deg, rgba(15,76,129,0.92) 0%, rgba(42,112,185,0.88) 100%),
+      url("https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1600&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .decor-float{
+    position:fixed;
+    opacity:0.08;
+    font-size:120px;
+    z-index:-1;
+    pointer-events:none;
+  }
+}
+</style>
+</head>
+<body class="bg-slate-50 text-slate-800 relative">
+
+<!-- 页面装饰浮动emoji背景 -->
+<div class="decor-float top-[18%] right-[4%]">✈️</div>
+<div class="decor-float top-[55%] left-[3%]">🌴</div>
+<div class="decor-float bottom-[12%] right-[8%]">🗺️</div>
+
+<!-- 顶部导航栏：固定顶部 + 旅行图片暗纹 -->
+<nav class="hero-pattern text-white shadow-lg fixed top-0 left-0 w-full z-50 overflow-x-auto scrollbar-hide">
+  <div class="container mx-auto px-4 py-3">
+    <h1 class="text-lg md:text-xl font-bold flex items-center gap-2 py-1">
+      <i class="fa fa-plane"></i>
+      十一马来西亚🇲🇾 新加坡🇸🇬 7天旅行
+    </h1>
+    <ul id="mainNav" class="flex flex-nowrap gap-1 text-white min-w-max">
+      <li class="nav-item py-2 px-3 cursor-pointer hover:bg-white/10 transition whitespace-nowrap text-sm" data-target="hotel">酒店信息 🏨</li>
+      <li class="nav-item py-2 px-3 cursor-pointer hover:bg-white/10 transition whitespace-nowrap text-sm" data-target="flight">航班信息 ✈️</li>
+      <li class="nav-item py-2 px-3 cursor-pointer hover:bg-white/10 transition whitespace-nowrap text-sm" data-target="prep">出发前准备10.03</li>
+      <li class="nav-item py-2 px-3 cursor-pointer hover:bg-white/10 transition whitespace-nowrap text-sm" data-target="day1">10.04 吉隆坡Day1</li>
+      <li class="nav-item py-2 px-3 cursor-pointer hover:bg-white/10 transition whitespace-nowrap text-sm" data-target="day2">10.05 吉隆坡Day2</li>
+      <li class="nav-item py-2 px-3 cursor-pointer hover:bg-white/10 transition whitespace-nowrap text-sm" data-target="day3">10.06 槟城Day1</li>
+      <li class="nav-item py-2 px-3 cursor-pointer hover:bg-white/10 transition whitespace-nowrap text-sm" data-target="day4">10.07 槟城Day2</li>
+      <li class="nav-item py-2 px-3 cursor-pointer hover:bg-white/10 transition whitespace-nowrap text-sm" data-target="day5">10.08 新加坡Day1</li>
+      <li class="nav-item py-2 px-3 cursor-pointer hover:bg-white/10 transition whitespace-nowrap text-sm" data-target="day6">10.09 新加坡Day2</li>
+      <li class="nav-item py-2 px-3 cursor-pointer hover:bg-white/10 transition whitespace-nowrap text-sm" data-target="day7">10.10 新加坡Day3</li>
+      <li class="nav-item py-2 px-3 cursor-pointer hover:bg-white/10 transition whitespace-nowrap text-sm" data-target="food">全部美食汇总</li>
+    </ul>
+  </div>
+</nav>
+
+<main class="container mx-auto px-4 pt-44 pb-8">
+
+<!-- 酒店信息 -->
+<section id="hotel" class="section-block mb-12">
+  <div class="bg-white rounded-2xl p-6 card-shadow">
+    <h2 class="text-2xl font-bold text-primary mb-4 flex items-center gap-2">
+      <i class="fa fa-building"></i>酒店信息 🏨
+    </h2>
+    <div class="grid md:grid-cols-3 gap-4">
+      <div class="border rounded-xl p-4 bg-slate-50">
+        <h3 class="font-bold">吉隆坡双威太子酒店 Sunway Putra Hotel Kuala Lumpur</h3>
+        <p class="text-sm">地址：100, Jalan Putra, Chow Kit, 50350 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia</p>
+        <p class="text-sm">入住：2026‑10‑04 ｜退房：2026‑10‑06｜1间 豪华房</p>
+        <p class="text-sm">电话：+60340409888</p>
+      </div>
+      <div class="border rounded-xl p-4 bg-slate-50">
+        <h3 class="font-bold">辉盛凯贝丽槟城酒店 Capri by Fraser Penang</h3>
+        <p class="text-sm">地址：31 Jalan Magazine, George Town, Penang 10300, Malaysia</p>
+        <p class="text-sm">入住：2026‑10‑06 ｜退房：2026‑10‑08｜1间 豪华特大床房</p>
+        <p class="text-sm">电话：+6042860000</p>
+      </div>
+      <div class="border rounded-xl p-4 bg-slate-50">
+        <h3 class="font-bold">新加坡宜必思快捷店‑实利基 ibis budget Singapore Selegie</h3>
+        <p class="text-sm">地址：183 Selegie Road, Singapore 188329</p>
+        <p class="text-sm">入住：2026‑10‑08 ｜退房：2026‑10‑10｜1间 高级大床房</p>
+        <p class="text-sm">电话：+6563377888</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 航班信息 -->
+<section id="flight" class="section-block mb-12">
+  <div class="bg-white rounded-2xl p-6 card-shadow">
+    <h2 class="text-2xl font-bold text-primary mb-4 flex items-center gap-2">
+      <i class="fa fa-plane"></i>航班信息（完整原文） ✈️
+    </h2>
+    <div class="overflow-x-auto">
+      <table class="w-full text-sm">
+        <thead>
+          <tr class="border-b-2 border-slate-200">
+            <th class="text-left py-2 px-2">日期</th>
+            <th class="text-left py-2 px-2">航班号</th>
+            <th class="text-left py-2 px-2">航线</th>
+            <th class="text-left py-2 px-2">时刻</th>
+            <th class="text-left py-2 px-2">时长 / 备注</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-slate-100">
+            <td class="py-2 px-2">10‑04 周日</td>
+            <td class="py-2 px-2">亚洲航空 AK151</td>
+            <td class="py-2 px-2">武汉天河 T3 → 吉隆坡 T2</td>
+            <td class="py-2 px-2">00:05‑05:10</td>
+            <td class="py-2 px-2">5h05m</td>
+          </tr>
+          <tr class="border-b border-slate-100">
+            <td class="py-2 px-2">10‑06 周二</td>
+            <td class="py-2 px-2">亚洲航空 AK6126</td>
+            <td class="py-2 px-2">吉隆坡 T2 → 槟城</td>
+            <td class="py-2 px-2">11:50‑12:50</td>
+            <td class="py-2 px-2">1h</td>
+          </tr>
+          <tr class="border-b border-slate-100">
+            <td class="py-2 px-2">10‑08 周四</td>
+            <td class="py-2 px-2">亚洲航空 AK1723</td>
+            <td class="py-2 px-2">槟城 → 新加坡樟宜 T4</td>
+            <td class="py-2 px-2">11:55‑13:20</td>
+            <td class="py-2 px-2">1h25m</td>
+          </tr>
+          <tr class="border-b border-slate-100">
+            <td class="py-2 px-2">10‑10 周六</td>
+            <td class="py-2 px-2">中国国航 CA826</td>
+            <td class="py-2 px-2">新加坡樟宜 T1 → 上海浦东 T2</td>
+            <td class="py-2 px-2">17:30‑23:20</td>
+            <td class="py-2 px-2">5h50m；中转上海7h30m</td>
+          </tr>
+          <tr>
+            <td class="py-2 px-2">10‑11 周日</td>
+            <td class="py-2 px-2">吉祥航空 HO1145</td>
+            <td class="py-2 px-2">上海浦东 T2 → 武汉天河 T2</td>
+            <td class="py-2 px-2">06:50‑09:10</td>
+            <td class="py-2 px-2">2h20m</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- 出发前准备 -->
+<section id="prep" class="section-block mb-12">
+  <div class="bg-white rounded-2xl p-6 card-shadow">
+    <h2 class="text-2xl font-bold text-primary mb-4 flex items-center gap-2">
+      <i class="fa fa-suitcase"></i>10.03‑武汉 出发前准备 🎒
+    </h2>
+    <div class="space-y-4">
+      <div>
+        <h3 class="font-semibold text-lg">马来西亚 MDAC</h3>
+        <p>武汉吉隆坡、吉隆坡‑槟城、槟城‑新加坡</p>
+      </div>
+      <div>
+        <h3 class="font-semibold text-lg">行李尺寸重量限制</h3>
+        <ul class="list-disc pl-6 space-y-1">
+          <li>亚航段（武汉‑吉隆坡 / 吉隆坡‑槟城 /槟城‑新加坡）随身:1件5kg，舱内行李尺寸(20×40×55cm)，三边合计115cm</li>
+          <li>亚航托运:1件,23kg,长宽高≤158cm</li>
+          <li>新加坡‑上海、上海‑武汉航段：托运1件,20kg,长宽高≤319cm以内</li>
+          <li>回国段随身:1件7kg,可带入舱内(23×36×56cm)</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold text-lg">资料与资金</h3>
+        <ul class="list-disc pl-6 space-y-1">
+          <li>机票/酒店行程单/流量卡</li>
+          <li>银行兑换马来西亚币/新加坡币，Visa卡</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold text-lg">携带物品</h3>
+        <p>雨伞,电子设备充电器,拖鞋,眼罩,颈枕,太阳镜,防晒服,一次性浴巾</p>
+      </div>
+      <div>
+        <h3 class="font-semibold text-lg">机场提醒</h3>
+        <p>21:00到机场值机‑换连坐座位</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Day1 -->
+<section id="day1" class="section-block mb-12">
+  <div class="bg-white rounded-2xl p-6 card-shadow border-l-4 border-malaysia">
+    <h2 class="text-2xl font-bold text-malaysia mb-4 flex items-center gap-2">
+      <i class="fa fa-map-marker"></i>10.04‑吉隆坡Day1 🌃
+    </h2>
+    <div class="space-y-3">
+      <div class="flex gap-3">
+        <span class="bg-malaysia/10 text-malaysia font-medium rounded px-3 py-1 shrink-0">00:05</span>
+        <div>天河国际机场 T3 亚洲航空AK151起飞</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-malaysia/10 text-malaysia font-medium rounded px-3 py-1 shrink-0">05:10</span>
+        <div>抵达吉隆坡国际机场 T2，吉隆坡入境</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-malaysia/10 text-malaysia font-medium rounded px-3 py-1 shrink-0">07:00</span>
+        <div>机场洗澡睡觉补充能量｜Kepler Club Arrival Hall Level 2 Sleeping Cabins & Showers</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-malaysia/10 text-malaysia font-medium rounded px-3 py-1 shrink-0">10:00</span>
+        <div>起床机场里面吃点饭 T2 L2</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-malaysia/10 text-malaysia font-medium rounded px-3 py-1 shrink-0">11:00</span>
+        <div>打车离开机场‑前往雪邦国际赛道</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-malaysia/10 text-malaysia font-medium rounded px-3 py-1 shrink-0">11:30</span>
+        <div>抵达雪邦赛道 C HILL，游玩至15:00</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-malaysia/10 text-malaysia font-medium rounded px-3 py-1 shrink-0">16:20</span>
+        <div>离开赛道‑前往市区，吉隆坡双威太子酒店 check in 入住，打车/地铁灵活选择</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-malaysia/10 text-malaysia font-medium rounded px-3 py-1 shrink-0">晚上</span>
+        <div>自由活动,吃饭,逛夜景</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-malaysia/10 text-malaysia font-medium rounded px-3 py-1 shrink-0">22:00</span>
+        <div>前往 吉隆坡悦榕庄酒店里面的bar；晚上酒店购买第二天落日飞车车票</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Day2 -->
+<section id="day2" class="section-block mb-12">
+  <div class="bg-white rounded-2xl p-6 card-shadow border-l-4 border-malaysia">
+    <h2 class="text-2xl font-bold text-malaysia mb-4 flex items-center gap-2">
+      <i class="fa fa-map-marker"></i>10.05‑吉隆坡Day2 🏙️
+    </h2>
+    <div class="space-y-3">
+      <div class="flex gap-3">
+        <span class="bg-malaysia/10 text-malaysia font-medium rounded px-3 py-1 shrink-0">上午</span>
+        <div>自然醒起床‑酒店吃早餐</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-malaysia/10 text-malaysia font-medium rounded px-3 py-1 shrink-0">上午‑下午打卡点</span>
+        <div>独立广场、中央艺术坊、茨厂街、国家清真寺、国家博物馆(网上反馈很小很没意思)、吉隆坡首相植物园、中央车站</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-malaysia/10 text-malaysia font-medium rounded px-3 py-1 shrink-0">中午</span>
+        <div>出发前往Serai@KLCC 餐厅，餐厅位于KLCC，KLCC里面有梅赛德斯F1</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-malaysia/10 text-malaysia font-medium rounded px-3 py-1 shrink-0">下午‑晚上打卡</span>
+        <div>
+          <ol class="list-decimal pl-6 space-y-1">
+            <li>吉隆坡双塔 klcc大门往喷泉走</li>
+            <li>吉隆坡城中城公园</li>
+            <li>步行至LMBI街区榴莲先生</li>
+            <li>十号胡同top10 买晓阳牌子</li>
+            <li>湿包都要吃 点一份油条 泡肉骨茶里吃</li>
+            <li>黄亚华（在亚罗街夜市中,五月天同款）
+              <ul class="list-disc pl-6">
+                <li>【招牌烧鸡翅 】外皮是美拉德色,咬下去鲜嫩多汁</li>
+                <li>【咸蛋黄鱿鱼 】好惊艳,包裹着咸蛋黄,鱿鱼弹牙,当零食吃根本停不下来</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-malaysia/10 text-malaysia font-medium rounded px-3 py-1 shrink-0">19:30前</span>
+        <div>抵达金河广场乘坐落日飞车，提前网上买票,现场换纸质票并盖戳(二层露天座位),行李寄存在周边</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-malaysia/10 text-malaysia font-medium rounded px-3 py-1 shrink-0">20:00</span>
+        <div>落日飞车发车</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-malaysia/10 text-malaysia font-medium rounded px-3 py-1 shrink-0">22:00</span>
+        <div>大概两小时后结束观光行程</div>
+      </div>
+      <div class="bg-slate-50 p-3 rounded">
+        <h4 class="font-semibold">美食备选:</h4>
+        <p>TRX 人均十几rm；Oriewtal kopi；牛油咖椰烤面包(甜咸)、咖喱叻沙(辣)；双威金字塔；潮汕牛肉火锅；沙茶酱淋炒饭；DurianBB WorldBB；Village Park Restaurant（从双子塔打车半小时,上午不排队!12.5RM 腿 没有辛辣刺激，很温和）</p>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-malaysia/10 text-malaysia font-medium rounded px-3 py-1 shrink-0">晚上睡前准备</span>
+        <div>
+          <ol class="list-decimal pl-6">
+            <li>下载MyICA Mobile APP</li>
+            <li>购买第二天去T2机场的火车票‑KLIA</li>
+            <li>去槟城的航班‑留意值机信息</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Day3 -->
+<section id="day3" class="section-block mb-12">
+  <div class="bg-white rounded-2xl p-6 card-shadow border-l-4 border-malaysia">
+    <h2 class="text-2xl font-bold text-malaysia mb-4 flex items-center gap-2">
+      <i class="fa fa-map-marker"></i>10.06‑槟城Day1 🎨
+    </h2>
+    <div class="space-y-3">
+      <div class="flex gap-3">
+        <span class="bg-malaysia/10 text-malaysia font-medium rounded px-3 py-1 shrink-0">7:00</span>
+        <div>酒店吃早餐</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-malaysia/10 text-malaysia font-medium rounded px-3 py-1 shrink-0">7:30</span>
+        <div>酒店check out</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-malaysia/10 text-malaysia font-medium rounded px-3 py-1 shrink-0">7:40</span>
+        <div>酒店出发 步行3分钟到达 Putra 轻轨站</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-malaysia/10 text-malaysia font-medium rounded px-3 py-1 shrink-0">7:50</span>
+        <div>中央车站站</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-malaysia/10 text-malaysia font-medium rounded px-3 py-1 shrink-0">8:20</span>
+        <div>检票上车出发</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-malaysia/10 text-malaysia font-medium rounded px-3 py-1 shrink-0">8:53</span>
+        <div>33分钟直达吉隆坡国际机场T2，到达机场，值机,选座,两次安检?吃点东西?</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-malaysia/10 text-malaysia font-medium rounded px-3 py-1 shrink-0">11:50</span>
+        <div>吉隆坡T2 亚洲航空AK6126起飞</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-malaysia/10 text-malaysia font-medium rounded px-3 py-1 shrink-0">12:50</span>
+        <div>槟城国际机场，入境</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-malaysia/10 text-malaysia font-medium rounded px-3 py-1 shrink-0">14:00</span>
+        <div>机场租车，如果成功租车开车去酒店</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-malaysia/10 text-malaysia font-medium rounded px-3 py-1 shrink-0">15:30</span>
+        <div>到达酒店 check in</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-malaysia/10 text-malaysia font-medium rounded px-3 py-1 shrink-0">15:50</span>
+        <div>放好行李出门逛逛</div>
+      </div>
+      <div>
+        <p><strong>打卡点位：</strong>张弼士故居(蓝屋)、圣公会圣乔治堂、槟城市政厅、壁画街和小印度、槟城艺术街、姓氏桥、reflexology siam paradise</p>
+      </div>
+      <div class="bg-slate-50 p-3 rounded">
+        <h4 class="font-semibold">美食备选:</h4>
+        <p>Makan pagi cafe、德成饭店；炒粿条:大火猛炒,配大虾、鸭蛋、豆芽,锅气十足,槟城街头灵魂小吃；亚参叻沙 (Asam Laksa)；福建虾面:虾头熬制红汤,鲜辣浓郁,面条弹牙；汕头街四大天王:天皇鸡脚(软烂卤鸡爪)、鸭粥粿汁、四果汤、炒粿条；椰浆饭 Nasi Lemak；娘惹菜:叁巴鱼、娘惹咖喱鸡,南洋融合风味；甜品:煎蕊、红豆冰、四果汤,斑斓椰香冰沙,解辣解暑；白咖啡:南洋特色,搭配烤黄油菠萝包</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Day4 -->
+<section id="day4" class="section-block mb-12">
+  <div class="bg-white rounded-2xl p-6 card-shadow border-l-4 border-malaysia">
+    <h2 class="text-2xl font-bold text-malaysia mb-4 flex items-center gap-2">
+      <i class="fa fa-map-marker"></i>10.07‑槟城Day2 ⛰️
+    </h2>
+    <div class="space-y-3">
+      <div class="flex gap-3">
+        <span class="bg-malaysia/10 text-malaysia font-medium rounded px-3 py-1 shrink-0">早上</span>
+        <div>醒来出发Makan pagi cafe本地人去的店吃早餐</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-malaysia/10 text-malaysia font-medium rounded px-3 py-1 shrink-0">上午</span>
+        <div>开车出发升旗山，带好护照‑单人往返升旗山小火车40马币</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-malaysia/10 text-malaysia font-medium rounded px-3 py-1 shrink-0">升旗山下来后</span>
+        <div>去FoodHub by You&Me 祥發美食壹家 体验当地美食</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-malaysia/10 text-malaysia font-medium rounded px-3 py-1 shrink-0">吃完饭后</span>
+        <div>开车前往槟城北部‑猫沙滩游玩</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-malaysia/10 text-malaysia font-medium rounded px-3 py-1 shrink-0">傍晚</span>
+        <div>前往新关仔角夜市,品尝当地美食；找个电影院看《生化危机·爆发夜》国内还没上映,据说很好看!</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-malaysia/10 text-malaysia font-medium rounded px-3 py-1 shrink-0">晚间</span>
+        <div>驾车回酒店 休息</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Day5 -->
+<section id="day5" class="section-block mb-12">
+  <div class="bg-white rounded-2xl p-6 card-shadow border-l-4 border-singapore">
+    <h2 class="text-2xl font-bold text-singapore mb-4 flex items-center gap-2">
+      <i class="fa fa-map-marker"></i>10.08 -新加坡Day1 🌊
+    </h2>
+    <div class="space-y-3">
+      <div class="flex gap-3">
+        <span class="bg-singapore/10 text-singapore font-medium rounded px-3 py-1 shrink-0">07:30</span>
+        <div>退房check out</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-singapore/10 text-singapore font-medium rounded px-3 py-1 shrink-0">08:30</span>
+        <div>吃完早餐</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-singapore/10 text-singapore font-medium rounded px-3 py-1 shrink-0">09:30</span>
+        <div>到达槟城国际机场</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-singapore/10 text-singapore font-medium rounded px-3 py-1 shrink-0">09:40</span>
+        <div>还车</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-singapore/10 text-singapore font-medium rounded px-3 py-1 shrink-0">10:10</span>
+        <div>值机 打印登机牌</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-singapore/10 text-singapore font-medium rounded px-3 py-1 shrink-0">11:55</span>
+        <div>亚洲航空AK1723登机起飞</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-singapore/10 text-singapore font-medium rounded px-3 py-1 shrink-0">13:20</span>
+        <div>落地新加坡樟宜机场T4</div>
+      </div>
+      <div>
+        <p><strong>樟宜机场游玩：</strong>空中森林、T1雨漩涡 T2 巨型水门 T3大滑梯 可免费存行李 对面饮品 MR. COCONUT 必喝 T2‑T3之间往返</p>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-singapore/10 text-singapore font-medium rounded px-3 py-1 shrink-0">15:00</span>
+        <div>出发前往酒店 ibis budget Singapore Selegie，地铁约1h、打车约30m</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-singapore/10 text-singapore font-medium rounded px-3 py-1 shrink-0">16:00</span>
+        <div>酒店check in</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-singapore/10 text-singapore font-medium rounded px-3 py-1 shrink-0">18:00</span>
+        <div>出发，22分钟到达Siloso Beach，傍晚+日落+夜景（18:54日落，根据具体到达时间与营业情况选择性逛逛）</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-singapore/10 text-singapore font-medium rounded px-3 py-1 shrink-0">18:30</span>
+        <div>在Siloso Beach 附近找一个舒服的位置 等待日落</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-singapore/10 text-singapore font-medium rounded px-3 py-1 shrink-0">19:30</span>
+        <div>海边找餐厅吃晚餐</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-singapore/10 text-singapore font-medium rounded px-3 py-1 shrink-0">21:00</span>
+        <div>回市区酒店；晚上回酒店线上购买新加坡动物园门票 / 美术馆门票</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Day6 -->
+<section id="day6" class="section-block mb-12">
+  <div class="bg-white rounded-2xl p-6 card-shadow border-l-4 border-singapore">
+    <h2 class="text-2xl font-bold text-singapore mb-4 flex items-center gap-2">
+      <i class="fa fa-map-marker"></i>10.09 -新加坡Day2 🦒
+    </h2>
+    <div class="space-y-3">
+      <div class="flex gap-3">
+        <span class="bg-singapore/10 text-singapore font-medium rounded px-3 py-1 shrink-0">09:00</span>
+        <div>前往新加坡动物园‑KLOOK购票</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-singapore/10 text-singapore font-medium rounded px-3 py-1 shrink-0">10:00</span>
+        <div>到达动物园 游玩</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-singapore/10 text-singapore font-medium rounded px-3 py-1 shrink-0">12:30</span>
+        <div>Ah Meng Restaurant吃午餐</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-singapore/10 text-singapore font-medium rounded px-3 py-1 shrink-0">13:40</span>
+        <div>打车离开动物园</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-singapore/10 text-singapore font-medium rounded px-3 py-1 shrink-0">14:20</span>
+        <div>乌节路</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-singapore/10 text-singapore font-medium rounded px-3 py-1 shrink-0">15:50</span>
+        <div>到达新加坡国立美术馆 参观完后可以在隔壁圣安德烈教堂打卡以及在往北的赞美广场打卡</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-singapore/10 text-singapore font-medium rounded px-3 py-1 shrink-0">16:30</span>
+        <div>旧禧街警察局</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-singapore/10 text-singapore font-medium rounded px-3 py-1 shrink-0">16:50</span>
+        <div>克拉码头</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-singapore/10 text-singapore font-medium rounded px-3 py-1 shrink-0">17:10</span>
+        <div>Chinatown牛车水</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-singapore/10 text-singapore font-medium rounded px-3 py-1 shrink-0">18:20</span>
+        <div>鱼尾狮公园</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-singapore/10 text-singapore font-medium rounded px-3 py-1 shrink-0">19:30</span>
+        <div>滨海湾花园 1945/2045灯光秀</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-singapore/10 text-singapore font-medium rounded px-3 py-1 shrink-0">20:00</span>
+        <div>走到滨海湾F1城市街道</div>
+      </div>
+      <div class="bg-slate-50 p-3 rounded">
+        <h4 class="font-semibold">备选打卡点位：</h4>
+        <p>新加坡国立美术馆、克拉码头、Chinatown 牛车水、旧禧街警察局、哈芝巷、鱼尾狮公园；Parkview Square atlas 杰伦孙燕姿同款；新加坡东海岸公园；新加坡弗莱士酒店；荷兰村 p1</p>
+        <h4 class="font-semibold mt-2">美食备选:</h4>
+        <ul class="list-disc pl-6">
+          <li>Coconut，人均20‑30</li>
+          <li>【亚坤】新加坡国民早餐,类似国内豆浆油条般存在,招牌是咖椰牛油吐司、水波蛋，人均40‑50</li>
+          <li>【松发肉骨茶】新加坡美食,软烂脱骨入口即化,蘸上辣椒酱吃别有一番风味。人均100‑150</li>
+          <li>【椰浆饭】斑斓叶、棕榈等点缀马来特色风味菜之一,知名的吃法还是鸡腿加上三巴酱，人均100‑115</li>
+          <li>【辣椒螃蟹】新加坡国菜毋庸置疑,推荐品牌珍宝海鲜、跳舞螃蟹等餐厅。人均500+；珍多+冰沙+红豆，人均80‑300元</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Day7 -->
+<section id="day7" class="section-block mb-12">
+  <div class="bg-white rounded-2xl p-6 card-shadow border-l-4 border-singapore">
+    <h2 class="text-2xl font-bold text-singapore mb-4 flex items-center gap-2">
+      <i class="fa fa-plane-departure"></i>10.10‑新加坡Day3 & 回国 🏠
+    </h2>
+    <div class="space-y-3">
+      <div class="flex gap-3">
+        <span class="bg-singapore/10 text-singapore font-medium rounded px-3 py-1 shrink-0">11:00</span>
+        <div>出发</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-singapore/10 text-singapore font-medium rounded px-3 py-1 shrink-0">11:40</span>
+        <div>地铁到达 荷兰村，中午在荷兰村逛吃</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-singapore/10 text-singapore font-medium rounded px-3 py-1 shrink-0">13:30</span>
+        <div>回酒店拿行李，地铁去樟宜机场T1</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-singapore/10 text-singapore font-medium rounded px-3 py-1 shrink-0">14:20</span>
+        <div>到达樟宜机场T1 行李托运 办理值机</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-singapore/10 text-singapore font-medium rounded px-3 py-1 shrink-0">17:30</span>
+        <div>起飞回国，中国国际航空CA826</div>
+      </div>
+      <div class="flex gap-3">
+        <span class="bg-singapore/10 text-singapore font-medium rounded px-3 py-1 shrink-0">23:20</span>
+        <div>抵达浦东国际机场，中转上海7h30m，次日HO1145上海回武汉</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 美食汇总 -->
+<section id="food" class="section-block mb-12">
+  <div class="bg-white rounded-2xl p-6 card-shadow">
+    <h2 class="text-2xl font-bold text-primary mb-4 flex items-center gap-2">
+      <i class="fa fa-cutlery"></i>全部美食汇总（来自PDF原文） 🍜
+    </h2>
+    <div class="space-y-4">
+      <div>
+        <h3 class="font-semibold text-lg text-malaysia">吉隆坡美食</h3>
+        <p>黄亚华：招牌烧鸡翅、咸蛋黄鱿鱼；十号胡同晓阳牌子；油条泡肉骨茶；TRX；Oriewtal kopi；牛油咖椰烤面包、咖喱叻沙；双威金字塔；潮汕牛肉火锅；沙茶酱淋炒饭；DurianBB WorldBB；Village Park Restaurant</p>
+      </div>
+      <div>
+        <h3 class="font-semibold text-lg text-malaysia">槟城美食</h3>
+        <p>Makan pagi cafe、德成饭店；炒粿条、亚参叻沙 Asam Laksa、福建虾面；汕头街四大天王（天皇鸡脚、鸭粥粿汁、四果汤、炒粿条）；椰浆饭Nasi Lemak；娘惹菜叁巴鱼、娘惹咖喱鸡；甜品煎蕊、红豆冰、四果汤、斑斓椰香冰沙；南洋白咖啡配烤黄油菠萝包；新关仔角夜市</p>
+      </div>
+      <div>
+        <h3 class="font-semibold text-lg text-singapore">新加坡美食</h3>
+        <p>MR.COCONUT；亚坤（咖椰牛油吐司、水波蛋）；松发肉骨茶；椰浆饭鸡腿配叁巴酱；辣椒螃蟹（珍宝海鲜、跳舞螃蟹）；珍多冰沙红豆甜品</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="bg-dark text-white py-6 mt-10">
+  <div class="container mx-auto px-4 text-center">
+    <p>十一马来西亚+新加坡7天完整行程｜网页版行程单</p>
+    <p class="text-sm opacity-60 mt-1">点击顶部导航快速跳转对应板块，滚动页面导航会自动高亮当前位置</p>
+  </div>
+</footer>
+
+<script>
+const navItems = document.querySelectorAll(".nav-item");
+navItems.forEach(item=>{
+  item.addEventListener("click",function(){
+    const targetId = this.getAttribute("data-target");
+    const targetDom = document.getElementById(targetId);
+    if(targetDom){
+      const offsetTop = targetDom.offsetTop - 170;
+      window.scrollTo({top:offsetTop, behavior:"smooth"});
+    }
+  })
+})
+
+const sections = document.querySelectorAll(".section-block");
+window.addEventListener("scroll",()=>{
+  let currentId = "";
+  sections.forEach(sec=>{
+    const secTop = sec.offsetTop;
+    if(window.scrollY >= secTop - 230){
+      currentId = sec.getAttribute("id");
+    }
+  })
+  navItems.forEach(nav=>{
+    nav.classList.remove("nav-active");
+    if(nav.getAttribute("data-target") === currentId){
+      nav.classList.add("nav-active");
+    }
+  })
+})
+</script>
+
+</body>
+</html>
